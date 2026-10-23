@@ -9,7 +9,7 @@ import resultRoutes from "./routes/results.js";
 
 const app = express();
 
-app.use(cors({ origin: process.env.CLIENT_URL || "http://localhost:3000" }));
+app.use(cors({ origin: process.env.CLIENT_URL }));
 app.use(express.json({ limit: "1mb" }));
 
 // Routes
